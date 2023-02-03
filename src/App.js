@@ -1,5 +1,5 @@
 import './App.css';
-import { NavBar } from "/workspace/website/camila-lopes/src/components/NavBar.js";
+import { NavBar } from "components/NavBar.js";
 
 function App() {
   return (

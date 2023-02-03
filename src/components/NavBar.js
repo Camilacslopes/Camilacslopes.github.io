@@ -2,10 +2,10 @@ import {useState, useEffect} from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import {Navbar, Nav,Container} from 'react-bootstrap';
-import logo from '/workspace/website/camila-lopes/src/assets/img/logo.svg';
-import navIcon1 from '/workspace/website/camila-lopes/src/assets/img/nav-icon1.svg';
-import navIcon2 from '/workspace/website/camila-lopes/src/assets/img/nav-icon2.svg';
-import navIcon3 from '/workspace/website/camila-lopes/src/assets/img/nav-icon3.svg';
+import logo from 'assets/img/logo.svg';
+import navIcon1 from 'assets/img/nav-icon1.svg';
+import navIcon2 from 'assets/img/nav-icon2.svg';
+import navIcon3 from 'assets/img/nav-icon3.svg';
 
 
 export const NavBar = () => {
