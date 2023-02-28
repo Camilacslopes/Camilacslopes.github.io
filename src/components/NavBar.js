@@ -3,8 +3,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import {Navbar, Nav,Container} from 'react-bootstrap';
 import logo from 'assets/img/logo.svg';
-import navIcon1 from 'assets/img/nav-icon1.svg';
-import navIcon2 from 'assets/img/nav-icon2.svg';
+import linkedin from 'assets/img/linkedin.svg';
+import github from 'assets/img/github.svg';
 import navIcon3 from 'assets/img/nav-icon3.svg';
 
 
@@ -50,8 +50,8 @@ export const NavBar = () => {
               <span className='navbar-text'>
                 <div className='social-icon'>
                 {/* eslint-disable-next-line */}
-                  <a href='https://github.com/judygab/web-dev-projects/blob/main/personal-portfolio/src/components/NavBar.js'><img src={navIcon1} alt=''/></a>
-                  <a href='https://github.com/judygab/web-dev-projects/blob/main/personal-portfolio/src/components/NavBar.js'><img src={navIcon2} alt=''/></a>
+                  <a href='https://www.linkedin.com/in/camila-lopes-dev/'><img src={linkedin} alt=''/></a>
+                  <a href='https://github.com/Camilacslopes'><img src={github} alt=''/></a>
                   <a href='https://github.com/judygab/web-dev-projects/blob/main/personal-portfolio/src/components/NavBar.js'><img src={navIcon3} alt=''/></a>
                 </div>
                 <HashLink to='#connect'>
