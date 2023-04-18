@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from "components/NavBar.js";
-import { Banner } from "components/Banner.js";
-import { Skills } from "components/Skills.js";
-import { Projects } from "components/Projects.js";
-import { Contact } from "components/Contact.js";
-import { Footer } from "components/Footer.js";
+import { NavBar } from "components/NavBar/NavBar.js";
+import { Banner } from "components/Banner/Banner.js";
+import { Skills } from "components/Skills/Skills.js";
+import { Projects } from "components/Projects/Projects.js";
+import { Contact } from "components/Contact/Contact.js";
+import { Footer } from "components/Footer/Footer.js";
 
 
 

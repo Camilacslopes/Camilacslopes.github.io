@@ -1,8 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-import linkedin from "../assets/img/linkedin.svg";
-import github from "../assets/img/github.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import './styles/index.css';
+import logo from "../../assets/img/logo.svg";
+import linkedin from "../../assets/img/linkedin.svg";
+import github from "../../assets/img/github.svg";
+import navIcon3 from "../../assets/img/nav-icon3.svg";
 
 export const Footer = () => {
   return (
