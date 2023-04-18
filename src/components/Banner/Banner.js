@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
-import headerImg from "src/assets/img/header-img.svg";
 import 'animate.css';
+import headerImg from "./assets/img/header-img.svg";
+import "./styles/banner.css";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);

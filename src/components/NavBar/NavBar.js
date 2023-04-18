@@ -2,10 +2,11 @@ import {useState, useEffect} from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import {Navbar, Nav,Container} from 'react-bootstrap';
-import logo from '../../assets/img/logo.svg';
-import linkedin from '../../assets/img/linkedin.svg';
-import github from '../../assets/img/github.svg';
-import navIcon3 from '../../assets/img/nav-icon3.svg';
+import "./styles/navbar.css";
+import logo from './assets/img/logo.svg';
+import linkedin from './assets/img/linkedin.svg';
+import github from './assets/img/github.svg';
+import navIcon3 from './assets/img/nav-icon3.svg';
 
 
 export const NavBar = () => {
@@ -15,11 +16,7 @@ export const NavBar = () => {
   
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50 ? true : false);
     }
 
     window.addEventListener('scroll', onScroll);
@@ -49,7 +46,6 @@ export const NavBar = () => {
               </Nav>
               <span className='navbar-text'>
                 <div className='social-icon'>
-                {/* eslint-disable-next-line */}
                   <a href='https://www.linkedin.com/in/camila-lopes-dev/'><img src={linkedin} alt=''/></a>
                   <a href='https://github.com/Camilacslopes'><img src={github} alt=''/></a>
                   <a href='https://github.com/judygab/web-dev-projects/blob/main/personal-portfolio/src/components/NavBar.js'><img src={navIcon3} alt=''/></a>
