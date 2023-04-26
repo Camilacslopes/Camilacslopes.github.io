@@ -6,7 +6,6 @@ import "./styles/navbar.css";
 import logo from './assets/img/logo.svg';
 import linkedin from './assets/img/linkedin.svg';
 import github from './assets/img/github.svg';
-import navIcon3 from './assets/img/nav-icon3.svg';
 
 
 export const NavBar = () => {
@@ -46,9 +45,8 @@ export const NavBar = () => {
               </Nav>
               <span className='navbar-text'>
                 <div className='social-icon'>
-                  <a href='https://www.linkedin.com/in/camila-lopes-dev/'><img src={linkedin} alt=''/></a>
-                  <a href='https://github.com/Camilacslopes'><img src={github} alt=''/></a>
-                  <a href='https://github.com/judygab/web-dev-projects/blob/main/personal-portfolio/src/components/NavBar.js'><img src={navIcon3} alt=''/></a>
+                <a href="https://www.linkedin.com/in/camila-lopes-dev/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedInLogo" /></a>
+                <a href="https://github.com/Camilacslopes" target="_blank" rel="noopener noreferrer"><img src={github} alt="GithubLogo" /></a>
                 </div>
                 <HashLink to='#connect'>
                   <button className='vvd'><span>Let's Connect</span></button>
