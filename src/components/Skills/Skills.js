@@ -1,7 +1,5 @@
 import 'react-multi-carousel/lib/styles.css';
-import meter1 from "assets/img/meter1.svg";
-import meter2 from "assets/img/meter2.svg";
-import meter3 from "assets/img/meter3.svg";
+import rating from "assets/img/rating.svg";
 import Carousel from 'react-multi-carousel';
 import colorSharp from "assets/img/color-sharp.png"
 import "./styles/skills.css";
@@ -36,20 +34,20 @@ export const Skills = () => {
                         <p>Here is a summary of the technologies I have the most experience and expertise.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="first" />
-                                <h5>Web Development</h5>
+                                <img src={rating} alt="first" />
+                                <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="second" />
-                                <h5>Brand Identity</h5>
+                                <img src={rating} alt="second" />
+                                <h5>Ruby on Rails</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="third" />
-                                <h5>Logo Design</h5>
+                                <img src={rating} alt="third" />
+                                <h5>GraphQL</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="forth" />
-                                <h5>Web Development</h5>
+                                <img src={rating} alt="forth" />
+                                <h5>AWS</h5>
                             </div>
                         </Carousel>
                     </div>
