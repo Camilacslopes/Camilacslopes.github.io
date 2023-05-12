@@ -2,47 +2,75 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../../assets/img/project-img1.png";
-import projImg2 from "../../assets/img/project-img2.png";
-import projImg3 from "../../assets/img/project-img3.png";
+import projImg1 from "../../assets/img/pipefy.png";
+import projImg2 from "../../assets/img/portfolio.png";
+import projImg3 from "../../assets/img/designsystem.png";
+import projImg4 from "../../assets/img/js-array.png";
+import projImg5 from "../../assets/img/js.gif";
+import projImg6 from "../../assets/img/bccsa.png";
+import projImg7 from "../../assets/img/toDoList.png";
+import projImg8 from "../../assets/img/tic-tac-toe-game-example.png";
+
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import "./styles/project.css";
 
 
 export const Projects = () => {
 
-  const projects = [
+  const frontendProjects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Pipefy",
+      description: "SaaS Business Startup",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
+      title: "Personal Portfolio",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Pipefy",
+      description: "Design System",
       imgUrl: projImg3,
     },
   ];
+
+  const backendProjects = [
+    {
+      title: "Pipefy",
+      description: "Databases and APIs",
+      imgUrl: projImg1,
+    },
+    {
+      title: "BCCSA",
+      description: "Cloud, Databases, APIs",
+      imgUrl: projImg6,
+    },
+    {
+      title: "API REST",
+      description: "Project with Node",
+      imgUrl: projImg7,
+    },
+  ];
+
+  const algorithmProjects = [
+    {
+      title: "JavaScript Exercises",
+      description: "Basic JS",
+      imgUrl: projImg5,
+    },
+    {
+      title: "JavaScript Arrays",
+      description: "JS Exercises with Arrays",
+      imgUrl: projImg4,
+    },
+    {
+      title: "JavaScript Exercises",
+      description: "Basic JS",
+      imgUrl: projImg8,
+    },
+  ];
+
 
   return (
     <section className="project" id="projects">
@@ -57,35 +85,57 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Frontend</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Backend</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Algorithm and Data Structure</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          frontendProjects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
+                              />
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        {
+                          backendProjects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                              />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Row>
+                        {
+                          algorithmProjects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                              />
+                            )
+                          })
+                        }
+                      </Row>                    
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
