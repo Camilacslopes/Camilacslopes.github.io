@@ -27,8 +27,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+    
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -50,6 +53,10 @@
   "devDependencies": {
     "@types/bootstrap": "^5.2.6",
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "style-loader": "^3.3.1"
-  }
+  },
+
+  "homepage": "https://Camilacslopes/camilacslopes.github.io"
+
 }
