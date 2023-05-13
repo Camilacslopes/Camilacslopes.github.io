@@ -1,5 +1,6 @@
 {
   "name": "camila-lopes",
+  "homepage": "https://camilacslopes.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -55,8 +56,5 @@
     "css-loader": "^6.7.3",
     "gh-pages": "^5.0.0",
     "style-loader": "^3.3.1"
-  },
-
-  "homepage": "https://Camilacslopes/camilacslopes.github.io"
-
+  }
 }
