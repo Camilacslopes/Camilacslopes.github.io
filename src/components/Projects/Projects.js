@@ -1,7 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
+
 import 'animate.css';
+import "./styles/project.css";
+
 import { ProjectCard } from "./ProjectCard";
+
 import projImg1 from "../../assets/img/pipefy.png";
 import projImg2 from "../../assets/img/portfolio.png";
 import projImg3 from "../../assets/img/designsystem.png";
@@ -10,9 +14,7 @@ import projImg5 from "../../assets/img/js.gif";
 import projImg6 from "../../assets/img/bccsa.png";
 import projImg7 from "../../assets/img/toDoList.png";
 import projImg8 from "../../assets/img/tic-tac-toe-game-example.png";
-
 import colorSharp2 from "../../assets/img/color-sharp2.png";
-import "./styles/project.css";
 
 
 export const Projects = () => {
@@ -22,16 +24,19 @@ export const Projects = () => {
       title: "Pipefy",
       description: "SaaS Business Startup",
       imgUrl: projImg1,
+      link: "https://www.pipefy.com/" ,
     },
     {
       title: "Personal Portfolio",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: "https://github.com/Camilacslopes/Portfolio" ,
     },
     {
       title: "Pipefy",
       description: "Design System",
       imgUrl: projImg3,
+      link: "https://pipefy.style/" ,
     },
   ];
 
@@ -40,16 +45,19 @@ export const Projects = () => {
       title: "Pipefy",
       description: "Databases and APIs",
       imgUrl: projImg1,
+      link: "https://www.pipefy.com/" ,
     },
     {
       title: "BCCSA",
       description: "Cloud, Databases, APIs",
       imgUrl: projImg6,
+      link: "https://www.bccsa.ca/" ,
     },
     {
       title: "API REST",
       description: "Project with Node",
       imgUrl: projImg7,
+      link: "https://github.com/Camilacslopes/ApiRESTful" ,
     },
   ];
 
@@ -58,16 +66,19 @@ export const Projects = () => {
       title: "JavaScript Exercises",
       description: "Basic JS",
       imgUrl: projImg5,
+      link: "https://github.com/Camilacslopes/js-basic-examples" ,
     },
     {
       title: "JavaScript Arrays",
       description: "JS Exercises with Arrays",
       imgUrl: projImg4,
+      link: "https://github.com/Camilacslopes/js-array-examples" ,
     },
     {
-      title: "JavaScript Exercises",
-      description: "Basic JS",
+      title: "Tic Tac Toe",
+      description: "Game Board in Ruby",
       imgUrl: projImg8,
+      link: "https://github.com/Camilacslopes/tictactoe-test" ,
     },
   ];
 
